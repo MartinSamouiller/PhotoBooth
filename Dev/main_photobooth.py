@@ -61,6 +61,7 @@ def next_frame():
     current_frame = current_frame + 1
     if current_frame > MAX_FRAMES:
 	    current_frame = 1
+    
     global frameMS
     frameMS = cv2.imread(path_filter + 'Frame{}.jpg'.format(current_frame))
     
@@ -69,6 +70,7 @@ def previous_frame():
     current_frame = current_frame - 1
     if current_frame < 1:
 	    current_frame = MAX_FRAMES
+    
     global frameMS
     frameMS = cv2.imread(path_filter + 'Frame{}.jpg'.format(current_frame))
     
