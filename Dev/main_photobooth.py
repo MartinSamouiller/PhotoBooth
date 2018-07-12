@@ -33,12 +33,12 @@ led = LED(21)
 
 current_frame = 1
 path_filter = 'frames/'
-MAX_FRAMES = 4
+MAX_FRAMES = 3
 path_frame = path_filter + 'Frame{}.jpg'.format(current_frame)
 frame_type = 1
 frameMS = cv2.imread(path_frame)
 
-path_save_images = '/home/pi/Desktop/Capture/'
+
 
 def process_image(img_cam, frame, frame_type):
 
@@ -96,6 +96,17 @@ btn_snap.when_pressed = snap
 
 if __name__=="__main__":
     # initialize the camera and grab a reference to the raw camera capture
+
+
+    #test hard disk at startup : 
+    path_save_images = 'media/martindisk/'
+    default_path = '/home/pi/Desktop/Capture/'
+
+    #si le disk dure n'est pas monté utilise la carte mémoire par defaut
+    if not os.path.exists(path_save_images):
+        path_save_images = default_path
+        #os.makedirs(path_save_images)
+
     
     w_flux = 1216
     h_flux = 1920
