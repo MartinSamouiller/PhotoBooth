@@ -16,6 +16,6 @@ dev folder contains code for Raspberry Pi 3 (python)
 
 # Final result: 
 
-![PhotoBooth](https://github.com/MartinSamouiller/PhotoBooth/tree/master/Pictures/IMG_0405.png)
+![PhotoBooth Start](Pictures/IMG_0405.png)
 
-![PhotoBooth](https://github.com/MartinSamouiller/PhotoBooth/tree/master/Pictures/IMG_0499.png)
+![PhotoBooth End](Pictures/IMG_0499.png)
