@@ -6,14 +6,8 @@
 
 
 # Doc : 
-- material 
+- hardware 
 - software
-- photos
-
-
-
-If you have any questions, do not hesitate :) 
-
 
 
 
